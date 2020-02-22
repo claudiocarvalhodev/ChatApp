@@ -1,5 +1,5 @@
 //
-//  WelcomeViewController.swift
+//  LoginViewController.swift
 //  Chat
 //
 //  Created by claudiocarvalho on 21/02/20.
@@ -8,22 +8,21 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
-    
+class LoginViewController: UIViewController {
+
     // MARK: - IBOutlets
     
-    @IBOutlet weak var phraseLabel: UILabel!
+    @IBOutlet weak var emailTextfield: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
     
     // MARK: - View Controller Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setElements()
     }
     
-    // MARK: - Helper Functions
+    // MARK: - IBActions
     
-    func setElements() {
-        phraseLabel.text = "Talk to someone"
+    @IBAction func loginPressed(_ sender: UIButton) {
     }
 }

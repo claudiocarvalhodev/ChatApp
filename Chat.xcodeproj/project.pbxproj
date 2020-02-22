@@ -14,6 +14,14 @@
 		91FFEE612400B648006E4B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FFEE5F2400B648006E4B19 /* LaunchScreen.storyboard */; };
 		91FFEE692400B7FF006E4B19 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 91FFEE682400B7FF006E4B19 /* .gitignore */; };
 		91FFEE752400BBE0006E4B19 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE742400BBE0006E4B19 /* WelcomeViewController.swift */; };
+		91FFEE792400BD73006E4B19 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE782400BD73006E4B19 /* UIView+Extensions.swift */; };
+		91FFEE7B2400BDA8006E4B19 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE7A2400BDA8006E4B19 /* UITextField+Extensions.swift */; };
+		91FFEE812400BE7B006E4B19 /* DesignablesUiButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE802400BE7B006E4B19 /* DesignablesUiButtonCustom.swift */; };
+		91FFEE832400BED2006E4B19 /* DesignablesUiViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE822400BED2006E4B19 /* DesignablesUiViewCustom.swift */; };
+		91FFEE852400BF1B006E4B19 /* DesignablesUiTextFieldCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE842400BF1B006E4B19 /* DesignablesUiTextFieldCustom.swift */; };
+		91FFEE882400C731006E4B19 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE872400C731006E4B19 /* LoginViewController.swift */; };
+		91FFEE8A2400C74D006E4B19 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE892400C74D006E4B19 /* RegisterViewController.swift */; };
+		91FFEE8D2400D29C006E4B19 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE8C2400D29C006E4B19 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		91FFEE622400B648006E4B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91FFEE682400B7FF006E4B19 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		91FFEE742400BBE0006E4B19 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		91FFEE782400BD73006E4B19 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		91FFEE7A2400BDA8006E4B19 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		91FFEE802400BE7B006E4B19 /* DesignablesUiButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignablesUiButtonCustom.swift; sourceTree = "<group>"; };
+		91FFEE822400BED2006E4B19 /* DesignablesUiViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignablesUiViewCustom.swift; sourceTree = "<group>"; };
+		91FFEE842400BF1B006E4B19 /* DesignablesUiTextFieldCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignablesUiTextFieldCustom.swift; sourceTree = "<group>"; };
+		91FFEE872400C731006E4B19 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		91FFEE892400C74D006E4B19 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		91FFEE8C2400D29C006E4B19 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +105,8 @@
 		91FFEE6C2400BB29006E4B19 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				91FFEE772400BD41006E4B19 /* Utils */,
+				91FFEE762400BD32006E4B19 /* Extensions */,
 				91FFEE6D2400BB35006E4B19 /* Images */,
 			);
 			path = Resources;
@@ -107,6 +125,8 @@
 			children = (
 				91FFEE6F2400BB55006E4B19 /* Launch Screen */,
 				91FFEE702400BB66006E4B19 /* Welcome */,
+				91FFEE862400C706006E4B19 /* Authentication */,
+				91FFEE8B2400D281006E4B19 /* Chat */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -140,6 +160,74 @@
 				91FFEE5A2400B645006E4B19 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		91FFEE762400BD32006E4B19 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE782400BD73006E4B19 /* UIView+Extensions.swift */,
+				91FFEE7A2400BDA8006E4B19 /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		91FFEE772400BD41006E4B19 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE7C2400BDD1006E4B19 /* IBDesignables */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		91FFEE7C2400BDD1006E4B19 /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE7F2400BDF4006E4B19 /* UITextField */,
+				91FFEE7E2400BDEB006E4B19 /* UIView */,
+				91FFEE7D2400BDDF006E4B19 /* UIButton */,
+			);
+			path = IBDesignables;
+			sourceTree = "<group>";
+		};
+		91FFEE7D2400BDDF006E4B19 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE802400BE7B006E4B19 /* DesignablesUiButtonCustom.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		91FFEE7E2400BDEB006E4B19 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE822400BED2006E4B19 /* DesignablesUiViewCustom.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		91FFEE7F2400BDF4006E4B19 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE842400BF1B006E4B19 /* DesignablesUiTextFieldCustom.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
+		91FFEE862400C706006E4B19 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE872400C731006E4B19 /* LoginViewController.swift */,
+				91FFEE892400C74D006E4B19 /* RegisterViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		91FFEE8B2400D281006E4B19 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE8C2400D29C006E4B19 /* ChatViewController.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +302,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91FFEE882400C731006E4B19 /* LoginViewController.swift in Sources */,
+				91FFEE8A2400C74D006E4B19 /* RegisterViewController.swift in Sources */,
+				91FFEE8D2400D29C006E4B19 /* ChatViewController.swift in Sources */,
+				91FFEE852400BF1B006E4B19 /* DesignablesUiTextFieldCustom.swift in Sources */,
 				91FFEE752400BBE0006E4B19 /* WelcomeViewController.swift in Sources */,
+				91FFEE832400BED2006E4B19 /* DesignablesUiViewCustom.swift in Sources */,
 				91FFEE552400B645006E4B19 /* AppDelegate.swift in Sources */,
+				91FFEE792400BD73006E4B19 /* UIView+Extensions.swift in Sources */,
+				91FFEE7B2400BDA8006E4B19 /* UITextField+Extensions.swift in Sources */,
+				91FFEE812400BE7B006E4B19 /* DesignablesUiButtonCustom.swift in Sources */,
 				91FFEE572400B645006E4B19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
