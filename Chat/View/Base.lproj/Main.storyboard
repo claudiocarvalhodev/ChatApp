@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,13 +15,484 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzy-RI-h1i">
+                                <rect key="frame" x="78" y="789" width="258" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Don't have an account? Sign Up">
+                                    <color key="titleColor" name="ChatWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="glv-DJ-oEk" kind="show" id="aWq-Ao-xsx"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOA-b1-gyn" userLabel="Login Button Container" customClass="DesignablesUiViewCustom" customModule="Chat" customModuleProvider="target">
+                                <rect key="frame" x="20" y="679" width="374" height="70"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="89c-9x-dCz">
+                                        <rect key="frame" x="10" y="10" width="354" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yct-I2-wgF" userLabel="Container Login Text" customClass="DesignablesUiViewCustom" customModule="Chat" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="50"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEL-P0-TVo" userLabel="Login Text Label">
+                                                        <rect key="frame" x="62.5" y="13" width="52.5" height="24"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <color key="textColor" name="ChatWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ChatRed"/>
+                                                <constraints>
+                                                    <constraint firstItem="zEL-P0-TVo" firstAttribute="centerX" secondItem="yct-I2-wgF" secondAttribute="centerX" id="ChO-1Q-mMk"/>
+                                                    <constraint firstItem="zEL-P0-TVo" firstAttribute="centerY" secondItem="yct-I2-wgF" secondAttribute="centerY" id="NDV-IS-u5o"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7i-yb-PBB">
+                                                <rect key="frame" x="177" y="0.0" width="177" height="50"/>
+                                                <color key="tintColor" name="ChatRed"/>
+                                                <state key="normal" image="arrow.right" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="black"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="041-GL-G45" kind="show" id="QG2-UK-V14"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="89c-9x-dCz" secondAttribute="bottom" constant="10" id="33Y-mP-1ZO"/>
+                                    <constraint firstItem="89c-9x-dCz" firstAttribute="top" secondItem="GOA-b1-gyn" secondAttribute="top" constant="10" id="9Qr-08-865"/>
+                                    <constraint firstAttribute="trailing" secondItem="89c-9x-dCz" secondAttribute="trailing" constant="10" id="Jds-Gz-HYZ"/>
+                                    <constraint firstItem="89c-9x-dCz" firstAttribute="leading" secondItem="GOA-b1-gyn" secondAttribute="leading" constant="10" id="fRU-6d-c6b"/>
+                                    <constraint firstAttribute="height" constant="70" id="n2b-s3-dVd"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="viewCornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Talk to someone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zba-bm-FpM">
+                                <rect key="frame" x="131" y="436" width="152.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" name="ChatWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="ChatRed"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jzy-RI-h1i" secondAttribute="bottom" constant="40" id="54M-1i-pKC"/>
+                            <constraint firstItem="GOA-b1-gyn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="U8R-eg-NGs"/>
+                            <constraint firstItem="Zba-bm-FpM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dWB-9y-J5a"/>
+                            <constraint firstItem="jzy-RI-h1i" firstAttribute="top" secondItem="GOA-b1-gyn" secondAttribute="bottom" constant="40" id="ffa-KK-bfM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GOA-b1-gyn" secondAttribute="trailing" constant="20" id="kLV-8h-4M8"/>
+                            <constraint firstItem="jzy-RI-h1i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pZO-TG-41a"/>
+                            <constraint firstItem="Zba-bm-FpM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x6w-jl-YdT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="phraseLabel" destination="Zba-bm-FpM" id="Jbx-vY-3Rw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133" y="139"/>
         </scene>
+        <!--Register View Controller-->
+        <scene sceneID="Qls-ev-RTU">
+            <objects>
+                <viewController id="glv-DJ-oEk" customClass="RegisterViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R3i-bi-EJp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMh-qU-RRT" userLabel="Stack View Container">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fia-76-IvI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1b-U4-bbq">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="421"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wja-CE-Sqa" userLabel="Register Container" customClass="DesignablesUiViewCustom" customModule="Chat" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="421" width="414" height="421"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kko-2v-Ekf">
+                                                        <rect key="frame" x="161.5" y="20" width="91" height="30"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" name="ChatRed"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j93-Yc-bbl" customClass="DesignablesUiTextFieldCustom" customModule="Chat" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="70" width="374" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="cA9-SW-6gD"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="ChatWhite"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldPaddingLeftCustom">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textFieldPlaceHolderColor">
+                                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldBorderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textFieldBorderColor">
+                                                                <color key="value" name="ChatWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldCornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cz6-9I-Cge" customClass="DesignablesUiTextFieldCustom" customModule="Chat" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="136" width="374" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="RdI-b5-ZW0"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="ChatWhite"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldPaddingLeftCustom">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textFieldPlaceHolderColor">
+                                                                <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldBorderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldCornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textFieldBorderColor">
+                                                                <color key="value" name="ChatWhite"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4s7-5Q-gyI" customClass="DesignablesUiButtonCustom" customModule="Chat" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="202" width="374" height="50"/>
+                                                        <color key="backgroundColor" name="ChatWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="4ZL-Rm-9a3"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="Sign Up">
+                                                            <color key="titleColor" name="ChatRed"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonCorderRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfq-eI-MRs">
+                                                        <rect key="frame" x="72" y="314" width="270" height="33"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <state key="normal" title="Already have an account? Sign In">
+                                                            <color key="titleColor" name="ChatWhite"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" name="ChatPurpleDark"/>
+                                                <constraints>
+                                                    <constraint firstItem="cz6-9I-Cge" firstAttribute="leading" secondItem="Wja-CE-Sqa" secondAttribute="leading" constant="20" id="0xZ-nJ-ea1"/>
+                                                    <constraint firstAttribute="trailing" secondItem="4s7-5Q-gyI" secondAttribute="trailing" constant="20" id="1DN-5D-Rhc"/>
+                                                    <constraint firstItem="Kko-2v-Ekf" firstAttribute="top" secondItem="Wja-CE-Sqa" secondAttribute="top" constant="20" id="4iD-If-g0s"/>
+                                                    <constraint firstItem="dfq-eI-MRs" firstAttribute="centerX" secondItem="Wja-CE-Sqa" secondAttribute="centerX" id="83p-Jp-ymd"/>
+                                                    <constraint firstItem="4s7-5Q-gyI" firstAttribute="top" secondItem="cz6-9I-Cge" secondAttribute="bottom" constant="16" id="8Vg-NU-MIA"/>
+                                                    <constraint firstItem="j93-Yc-bbl" firstAttribute="top" secondItem="Kko-2v-Ekf" secondAttribute="bottom" constant="20" id="E6w-8N-XW6"/>
+                                                    <constraint firstItem="j93-Yc-bbl" firstAttribute="leading" secondItem="Wja-CE-Sqa" secondAttribute="leading" constant="20" id="FGS-ct-2dR"/>
+                                                    <constraint firstItem="4s7-5Q-gyI" firstAttribute="leading" secondItem="Wja-CE-Sqa" secondAttribute="leading" constant="20" id="FMd-ba-TQi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="j93-Yc-bbl" secondAttribute="trailing" constant="20" id="G5N-hf-19C"/>
+                                                    <constraint firstItem="Kko-2v-Ekf" firstAttribute="centerX" secondItem="Wja-CE-Sqa" secondAttribute="centerX" id="JkX-UT-gyI"/>
+                                                    <constraint firstItem="cz6-9I-Cge" firstAttribute="top" secondItem="j93-Yc-bbl" secondAttribute="bottom" constant="16" id="MMW-8Z-pBR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="cz6-9I-Cge" secondAttribute="trailing" constant="20" id="cLZ-ux-0ko"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dfq-eI-MRs" secondAttribute="bottom" constant="74" id="knN-4g-Aa7"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusTopLeftAndTopRight">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fia-76-IvI" secondAttribute="bottom" id="4LB-1m-s54"/>
+                                    <constraint firstAttribute="trailing" secondItem="fia-76-IvI" secondAttribute="trailing" id="afQ-Oy-fXi"/>
+                                    <constraint firstItem="fia-76-IvI" firstAttribute="top" secondItem="mMh-qU-RRT" secondAttribute="top" id="dX5-1C-NNC"/>
+                                    <constraint firstItem="fia-76-IvI" firstAttribute="leading" secondItem="mMh-qU-RRT" secondAttribute="leading" id="wOD-rt-OUN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="ChatRed"/>
+                        <constraints>
+                            <constraint firstItem="mMh-qU-RRT" firstAttribute="top" secondItem="R3i-bi-EJp" secondAttribute="top" id="C03-W1-Qxx"/>
+                            <constraint firstAttribute="bottom" secondItem="mMh-qU-RRT" secondAttribute="bottom" id="gFW-Cv-DKu"/>
+                            <constraint firstItem="mMh-qU-RRT" firstAttribute="leading" secondItem="f0r-09-boS" secondAttribute="leading" id="iuN-MO-kvg"/>
+                            <constraint firstItem="f0r-09-boS" firstAttribute="trailing" secondItem="mMh-qU-RRT" secondAttribute="trailing" id="ybG-qi-3s1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f0r-09-boS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1N0-D1-7vC"/>
+                    <connections>
+                        <segue destination="Wp6-SI-lr1" kind="show" identifier="RegisterToChat" id="JHY-Yw-2lx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Lu-cn-OsG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="557"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="rZp-UK-Z5F">
+            <objects>
+                <viewController id="Wp6-SI-lr1" customClass="ChatViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxT-od-kG8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viL-7l-yeI" userLabel="Message Container">
+                                <rect key="frame" x="0.0" y="748" width="414" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XXz-7F-2rk">
+                                        <rect key="frame" x="20" y="20" width="314" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="eOh-wf-T2h"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZD-TD-6pw" customClass="DesignablesUiButtonCustom" customModule="Chat" customModuleProvider="target">
+                                        <rect key="frame" x="354" y="20" width="40" height="40"/>
+                                        <color key="backgroundColor" name="ChatWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="3CP-GX-AiF"/>
+                                            <constraint firstAttribute="height" constant="40" id="HDP-aV-lnd"/>
+                                        </constraints>
+                                        <color key="tintColor" name="ChatRed"/>
+                                        <state key="normal" image="paperplane.fill" catalog="system"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonCorderRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="WZD-TD-6pw" firstAttribute="top" secondItem="viL-7l-yeI" secondAttribute="top" constant="20" id="8TQ-ce-1n9"/>
+                                    <constraint firstItem="XXz-7F-2rk" firstAttribute="leading" secondItem="viL-7l-yeI" secondAttribute="leading" constant="20" id="9Wc-ES-qhp"/>
+                                    <constraint firstItem="WZD-TD-6pw" firstAttribute="leading" secondItem="XXz-7F-2rk" secondAttribute="trailing" constant="20" id="VI8-57-d7y"/>
+                                    <constraint firstItem="XXz-7F-2rk" firstAttribute="top" secondItem="viL-7l-yeI" secondAttribute="top" constant="20" id="Yl4-da-0ig"/>
+                                    <constraint firstAttribute="height" constant="60" id="cd6-C4-ulw"/>
+                                    <constraint firstAttribute="trailing" secondItem="WZD-TD-6pw" secondAttribute="trailing" constant="20" id="hYz-PS-gsM"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q4l-2w-eFY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="748"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="KGd-oS-fWK">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGd-oS-fWK" id="tCd-gI-Fl9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" name="ChatRed"/>
+                        <constraints>
+                            <constraint firstItem="q4l-2w-eFY" firstAttribute="trailing" secondItem="gsr-ez-kVi" secondAttribute="trailing" id="9nt-t7-Abn"/>
+                            <constraint firstItem="gsr-ez-kVi" firstAttribute="trailing" secondItem="viL-7l-yeI" secondAttribute="trailing" id="DPt-0E-XgA"/>
+                            <constraint firstItem="q4l-2w-eFY" firstAttribute="top" secondItem="gsr-ez-kVi" secondAttribute="top" id="YDZ-lB-YdY"/>
+                            <constraint firstItem="viL-7l-yeI" firstAttribute="top" secondItem="q4l-2w-eFY" secondAttribute="bottom" id="Ypa-VT-MmW"/>
+                            <constraint firstItem="viL-7l-yeI" firstAttribute="leading" secondItem="gsr-ez-kVi" secondAttribute="leading" id="oH6-bL-9Am"/>
+                            <constraint firstItem="gsr-ez-kVi" firstAttribute="bottom" secondItem="viL-7l-yeI" secondAttribute="bottom" id="oiT-ov-chT"/>
+                            <constraint firstItem="q4l-2w-eFY" firstAttribute="leading" secondItem="gsr-ez-kVi" secondAttribute="leading" id="yev-zD-J7d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gsr-ez-kVi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nir-2Y-Csp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WLO-nd-6j6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2095.6521739130435" y="199.55357142857142"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="kgy-9F-DSe">
+            <objects>
+                <viewController id="041-GL-G45" customClass="LoginViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KFr-H4-FVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6x-L3-Dmg" userLabel="Stack View Container">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dyd-Nw-a23">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zJg-37-lz5">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="421"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIF-Wf-CpU" userLabel="Login Container" customClass="DesignablesUiViewCustom" customModule="Chat" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="421" width="414" height="421"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OI5-NS-Dtu" userLabel="Login Text">
+                                                        <rect key="frame" x="174.5" y="20" width="65" height="30"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                        <color key="textColor" name="ChatRed"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QBW-r6-Kby" customClass="DesignablesUiTextFieldCustom" customModule="Chat" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="70" width="374" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="MtQ-8D-u21"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldPaddingLeftCustom">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldBorderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldCornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textFieldBorderColor">
+                                                                <color key="value" name="ChatRed"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aZA-c0-y5K" customClass="DesignablesUiTextFieldCustom" customModule="Chat" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="136" width="374" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="30o-29-ccB"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldPaddingLeftCustom">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldBorderWidth">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="textFieldBorderColor">
+                                                                <color key="value" name="ChatRed"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="textFieldCornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4w-5d-4mb" customClass="DesignablesUiButtonCustom" customModule="Chat" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="202" width="374" height="50"/>
+                                                        <color key="backgroundColor" name="ChatRed"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="6jk-mA-L7I"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                        <state key="normal" title="Login">
+                                                            <color key="titleColor" name="ChatWhite"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="buttonCorderRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="aZA-c0-y5K" firstAttribute="top" secondItem="QBW-r6-Kby" secondAttribute="bottom" constant="16" id="24k-o6-Lq8"/>
+                                                    <constraint firstItem="QBW-r6-Kby" firstAttribute="leading" secondItem="yIF-Wf-CpU" secondAttribute="leading" constant="20" id="2t3-A8-L0h"/>
+                                                    <constraint firstItem="aZA-c0-y5K" firstAttribute="leading" secondItem="yIF-Wf-CpU" secondAttribute="leading" constant="20" id="5TQ-uf-U8o"/>
+                                                    <constraint firstAttribute="trailing" secondItem="QBW-r6-Kby" secondAttribute="trailing" constant="20" id="AXz-xf-moz"/>
+                                                    <constraint firstItem="OI5-NS-Dtu" firstAttribute="top" secondItem="yIF-Wf-CpU" secondAttribute="top" constant="20" id="Jji-6m-e9O"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aZA-c0-y5K" secondAttribute="trailing" constant="20" id="RH6-8U-Mgy"/>
+                                                    <constraint firstItem="OI5-NS-Dtu" firstAttribute="centerX" secondItem="yIF-Wf-CpU" secondAttribute="centerX" id="fNj-Oe-eTZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="A4w-5d-4mb" secondAttribute="trailing" constant="20" id="o2v-NE-VTj"/>
+                                                    <constraint firstItem="A4w-5d-4mb" firstAttribute="top" secondItem="aZA-c0-y5K" secondAttribute="bottom" constant="16" id="tC4-yS-MT1"/>
+                                                    <constraint firstItem="QBW-r6-Kby" firstAttribute="top" secondItem="OI5-NS-Dtu" secondAttribute="bottom" constant="20" id="tUV-mh-sI4"/>
+                                                    <constraint firstItem="A4w-5d-4mb" firstAttribute="leading" secondItem="yIF-Wf-CpU" secondAttribute="leading" constant="20" id="tmF-jB-hUK"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusTopLeftAndTopRight">
+                                                        <real key="value" value="40"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Dyd-Nw-a23" secondAttribute="bottom" id="9LL-V6-ccW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dyd-Nw-a23" secondAttribute="trailing" id="rlj-z6-XIu"/>
+                                    <constraint firstItem="Dyd-Nw-a23" firstAttribute="leading" secondItem="Y6x-L3-Dmg" secondAttribute="leading" id="veU-gP-s2k"/>
+                                    <constraint firstItem="Dyd-Nw-a23" firstAttribute="top" secondItem="Y6x-L3-Dmg" secondAttribute="top" id="wao-Vb-fGZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="ChatRed"/>
+                        <constraints>
+                            <constraint firstItem="Y6x-L3-Dmg" firstAttribute="top" secondItem="KFr-H4-FVQ" secondAttribute="top" id="GBa-KF-yGf"/>
+                            <constraint firstAttribute="bottom" secondItem="Y6x-L3-Dmg" secondAttribute="bottom" id="OhB-66-lTv"/>
+                            <constraint firstItem="Y6x-L3-Dmg" firstAttribute="leading" secondItem="VMD-T6-4Ap" secondAttribute="leading" id="ZhK-ro-GEi"/>
+                            <constraint firstItem="VMD-T6-4Ap" firstAttribute="trailing" secondItem="Y6x-L3-Dmg" secondAttribute="trailing" id="fm8-T3-QYq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VMD-T6-4Ap"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Os8-l1-c77"/>
+                    <connections>
+                        <segue destination="Wp6-SI-lr1" kind="show" identifier="LoginToChat" id="nGc-Be-2b7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JL6-6l-nfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="-229"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="arrow.right" catalog="system" width="64" height="48"/>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+        <namedColor name="ChatPurpleDark">
+            <color red="0.15686274510000001" green="0.14901960780000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ChatRed">
+            <color red="1" green="0.30588235289999999" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ChatWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nGc-Be-2b7"/>
+    </inferredMetricsTieBreakers>
 </document>
