@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		91FFEE552400B645006E4B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE542400B645006E4B19 /* AppDelegate.swift */; };
 		91FFEE572400B645006E4B19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE562400B645006E4B19 /* SceneDelegate.swift */; };
-		91FFEE592400B645006E4B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE582400B645006E4B19 /* ViewController.swift */; };
 		91FFEE5C2400B645006E4B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FFEE5A2400B645006E4B19 /* Main.storyboard */; };
 		91FFEE5E2400B648006E4B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91FFEE5D2400B648006E4B19 /* Assets.xcassets */; };
 		91FFEE612400B648006E4B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91FFEE5F2400B648006E4B19 /* LaunchScreen.storyboard */; };
 		91FFEE692400B7FF006E4B19 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 91FFEE682400B7FF006E4B19 /* .gitignore */; };
+		91FFEE752400BBE0006E4B19 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE742400BBE0006E4B19 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		91FFEE512400B645006E4B19 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FFEE542400B645006E4B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91FFEE562400B645006E4B19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		91FFEE582400B645006E4B19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91FFEE5B2400B645006E4B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91FFEE5D2400B648006E4B19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91FFEE602400B648006E4B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91FFEE622400B648006E4B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91FFEE682400B7FF006E4B19 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		91FFEE742400BBE0006E4B19 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +59,87 @@
 		91FFEE532400B645006E4B19 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				91FFEE542400B645006E4B19 /* AppDelegate.swift */,
-				91FFEE562400B645006E4B19 /* SceneDelegate.swift */,
-				91FFEE582400B645006E4B19 /* ViewController.swift */,
-				91FFEE5A2400B645006E4B19 /* Main.storyboard */,
-				91FFEE5D2400B648006E4B19 /* Assets.xcassets */,
-				91FFEE5F2400B648006E4B19 /* LaunchScreen.storyboard */,
-				91FFEE622400B648006E4B19 /* Info.plist */,
+				91FFEE6A2400BADC006E4B19 /* Application */,
+				91FFEE6B2400BB18006E4B19 /* Support Files */,
+				91FFEE6C2400BB29006E4B19 /* Resources */,
+				91FFEE722400BB96006E4B19 /* Model */,
+				91FFEE732400BBA3006E4B19 /* View */,
+				91FFEE6E2400BB47006E4B19 /* Scenes */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		91FFEE6A2400BADC006E4B19 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE542400B645006E4B19 /* AppDelegate.swift */,
+				91FFEE562400B645006E4B19 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		91FFEE6B2400BB18006E4B19 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE622400B648006E4B19 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		91FFEE6C2400BB29006E4B19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE6D2400BB35006E4B19 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		91FFEE6D2400BB35006E4B19 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE5D2400B648006E4B19 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		91FFEE6E2400BB47006E4B19 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE6F2400BB55006E4B19 /* Launch Screen */,
+				91FFEE702400BB66006E4B19 /* Welcome */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		91FFEE6F2400BB55006E4B19 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE5F2400B648006E4B19 /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		91FFEE702400BB66006E4B19 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE742400BBE0006E4B19 /* WelcomeViewController.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		91FFEE722400BB96006E4B19 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91FFEE732400BBA3006E4B19 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE5A2400B645006E4B19 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91FFEE592400B645006E4B19 /* ViewController.swift in Sources */,
+				91FFEE752400BBE0006E4B19 /* WelcomeViewController.swift in Sources */,
 				91FFEE552400B645006E4B19 /* AppDelegate.swift in Sources */,
 				91FFEE572400B645006E4B19 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,7 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Chat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Chat/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Chat/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Chat/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
