@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
     
     // MARK: - IBOutlets
     
-    @IBOutlet weak var phraseLabel: UILabel!
+    @IBOutlet weak var phraseLabel: CLTypingLabel!
     
     // MARK: - View Controller Lifecycle
 
