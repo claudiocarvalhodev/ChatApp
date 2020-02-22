@@ -23,6 +23,8 @@
 		91FFEE8A2400C74D006E4B19 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE892400C74D006E4B19 /* RegisterViewController.swift */; };
 		91FFEE8D2400D29C006E4B19 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE8C2400D29C006E4B19 /* ChatViewController.swift */; };
 		91FFEE8F2400DE11006E4B19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91FFEE8E2400DE11006E4B19 /* GoogleService-Info.plist */; };
+		91FFEE922400FA10006E4B19 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE912400FA10006E4B19 /* Constants.swift */; };
+		91FFEE942400FECF006E4B19 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE932400FECF006E4B19 /* Message.swift */; };
 		E233A6B2919A964133E3057A /* Pods_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7052D404CC229463E55F5514 /* Pods_Chat.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		91FFEE892400C74D006E4B19 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		91FFEE8C2400D29C006E4B19 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		91FFEE8E2400DE11006E4B19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		91FFEE912400FA10006E4B19 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		91FFEE932400FECF006E4B19 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		FE47D40E8267C2068A1F455F /* Pods-Chat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat.release.xcconfig"; path = "Target Support Files/Pods-Chat/Pods-Chat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +128,7 @@
 		91FFEE6C2400BB29006E4B19 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				91FFEE902400F9F3006E4B19 /* Constants */,
 				91FFEE772400BD41006E4B19 /* Utils */,
 				91FFEE762400BD32006E4B19 /* Extensions */,
 				91FFEE6D2400BB35006E4B19 /* Images */,
@@ -169,6 +174,7 @@
 		91FFEE722400BB96006E4B19 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				91FFEE932400FECF006E4B19 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +253,14 @@
 				91FFEE8C2400D29C006E4B19 /* ChatViewController.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		91FFEE902400F9F3006E4B19 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				91FFEE912400FA10006E4B19 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		A170E99E4F736E8EEBD16A03 /* Frameworks */ = {
@@ -383,8 +397,10 @@
 				91FFEE552400B645006E4B19 /* AppDelegate.swift in Sources */,
 				91FFEE792400BD73006E4B19 /* UIView+Extensions.swift in Sources */,
 				91FFEE7B2400BDA8006E4B19 /* UITextField+Extensions.swift in Sources */,
+				91FFEE942400FECF006E4B19 /* Message.swift in Sources */,
 				91FFEE812400BE7B006E4B19 /* DesignablesUiButtonCustom.swift in Sources */,
 				91FFEE572400B645006E4B19 /* SceneDelegate.swift in Sources */,
+				91FFEE922400FA10006E4B19 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
