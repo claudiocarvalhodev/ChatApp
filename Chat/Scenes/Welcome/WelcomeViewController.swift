@@ -25,6 +25,6 @@ class WelcomeViewController: UIViewController {
     // MARK: - Helper Functions
     
     func setElements() {
-        phraseLabel.text = "Talk to someone"
+        phraseLabel.text = Constants.appPhrase
     }
 }
