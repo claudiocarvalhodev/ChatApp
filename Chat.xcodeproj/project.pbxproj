@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		913C620024022DE80057DB70 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 913C61FF24022DE80057DB70 /* README.md */; };
 		916201422401F9CF0008CB01 /* DesignablesUiImageViewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916201412401F9CF0008CB01 /* DesignablesUiImageViewCustom.swift */; };
 		91FFEE552400B645006E4B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE542400B645006E4B19 /* AppDelegate.swift */; };
 		91FFEE572400B645006E4B19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FFEE562400B645006E4B19 /* SceneDelegate.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		4343158E28FA188919F6B232 /* Pods-Chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chat.debug.xcconfig"; path = "Target Support Files/Pods-Chat/Pods-Chat.debug.xcconfig"; sourceTree = "<group>"; };
 		7052D404CC229463E55F5514 /* Pods_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		913C61FF24022DE80057DB70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		916201412401F9CF0008CB01 /* DesignablesUiImageViewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignablesUiImageViewCustom.swift; sourceTree = "<group>"; };
 		91FFEE512400B645006E4B19 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91FFEE542400B645006E4B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		91FFEE482400B645006E4B19 = {
 			isa = PBXGroup;
 			children = (
+				913C61FF24022DE80057DB70 /* README.md */,
 				91FFEE682400B7FF006E4B19 /* .gitignore */,
 				91FFEE532400B645006E4B19 /* Chat */,
 				91FFEE522400B645006E4B19 /* Products */,
@@ -359,6 +362,7 @@
 				91FFEE692400B7FF006E4B19 /* .gitignore in Resources */,
 				91FFEE9924010946006E4B19 /* MessageCell.xib in Resources */,
 				91FFEE612400B648006E4B19 /* LaunchScreen.storyboard in Resources */,
+				913C620024022DE80057DB70 /* README.md in Resources */,
 				91FFEE8F2400DE11006E4B19 /* GoogleService-Info.plist in Resources */,
 				91FFEE5E2400B648006E4B19 /* Assets.xcassets in Resources */,
 				91FFEE5C2400B645006E4B19 /* Main.storyboard in Resources */,
