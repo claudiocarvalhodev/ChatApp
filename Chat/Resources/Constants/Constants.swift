@@ -9,7 +9,7 @@
 import Foundation
 
 struct Constants {
-    static let appName = "chat"
+    static let appName = "Chat"
     static let appPhrase = "Talk to someone"
     static let loginSegue = "LoginToChat"
     static let registerSegue = "RegisterToChat"
