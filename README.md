@@ -53,8 +53,8 @@ Below is an overview of the functionality implemented:
 
 <table style="width:100%">
   <tr>
-    <td><img src="https://github.com/claudiocarvalhodev/ChatApp/blob/develop/Screenshots/screenshot-05.png" alt="News" width=400 height=375/></td>
-    <td><img src="https://github.com/claudiocarvalhodev/ChatApp/blob/develop/Screenshots/screenshot-06.png" alt="News" width=400 height=375/></td>
+    <td><img src="https://github.com/claudiocarvalhodev/ChatApp/blob/develop/Screenshots/screenshot-05.png" alt="News" /></td>
+    <td><img src="https://github.com/claudiocarvalhodev/ChatApp/blob/develop/Screenshots/screenshot-06.png" alt="News" /></td>
   </tr>
 </table>
 
